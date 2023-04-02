@@ -1,0 +1,183 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+}
+
+.images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+    padding: 0 30px;
+}
+
+.imgpreview-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.imgpreview-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+
+.imgpreview-top .imageboundary:nth-child(odd),
+.imgpreview-bottom .imageboundary:nth-child(even) {
+    width: 31.2%;
+    padding-right: 0.7em;
+}
+
+.imgpreview-top .imageboundary:nth-child(even),
+.imgpreview-bottom .imageboundary:nth-child(odd) {
+    padding-right: 0.7em;
+    width: 18.8%;
+}
+
+.imgpreview-top .imageboundary>div,
+.imgpreview-bottom .imageboundary>div {
+    padding: 1em;
+    border: 2px solid var(--theme);
+    border-radius: 10px;
+}
+
+.imageboundary img {
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: 100%;
+    width: 100%;
+}
+
+.imageboundary img:hover {
+    scale: 1.1;
+}
+
+.btn_description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+
+.description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4em 2em 1em 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.description p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 80%;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: var(--theme);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0;
+    margin-bottom: 50px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    scale: 1.2;
+}
+
+@media screen and (max-width: 750px) {
+
+    .imgpreview-top,
+    .imgpreview-bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .images>.imgpreview-top>.imageboundary,
+    .images .imgpreview-bottom .imageboundary {
+        width: 50%;
+    }
+
+    .imgpreview-bottom .imageboundary:nth-child(1),
+    .imgpreview-top .imageboundary:nth-child(1) {
+        margin-bottom: 0.5em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+    }
+
+    .imgpreview-bottom .imageboundary:nth-child(2),
+    .imgpreview-top .imageboundary:nth-child(2) {
+        margin-bottom: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .imgpreview-bottom .imageboundary:nth-child(3),
+    .imgpreview-top .imageboundary:nth-child(3) {
+        margin-top: 0.5em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+    }
+
+    .imgpreview-bottom .imageboundary:nth-child(4),
+    .imgpreview-top .imageboundary:nth-child(4) {
+        margin-top: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}

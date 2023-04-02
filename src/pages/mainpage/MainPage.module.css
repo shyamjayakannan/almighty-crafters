@@ -1,0 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.container {
+    min-height: 50vh;
+    width: 100vw;
+    position: relative;
+}
+
+.visible {
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; */
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}

@@ -1,0 +1,7 @@
+.canvas {
+    z-index: -1;
+    transform: rotate(155deg);
+    left: -90vw;
+    top: -90vh;
+    position: absolute;
+}

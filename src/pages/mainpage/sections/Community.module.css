@@ -1,0 +1,167 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+.description p {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0 3em;
+}
+
+.description div {
+    height: 360px;
+    width: 360px;
+    padding: 10px;
+    border: 2px solid var(--theme);
+    border-radius: 20px;
+}
+
+.description div img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.icons {
+    margin: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.icons a {
+    position: relative;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    width: 5em;
+    margin: 1em;
+}
+
+.icons a svg {
+    background-clip: border-box;
+    -webkit-background-clip: content-box;
+    display: block;
+    width: 100%;
+
+    /* VERY IMPORTANT WE WANT HEIGHT OF SVG TO STAY SAME EVEN IF ITS PARENT'S HEIGHT CHANGES, SO HEIGHT WILL BECOME
+    EQUAL TO WIDTH BECAUSE OF ASPECT RATIO */
+    aspect-ratio: 1;
+}
+
+.icons a div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+
+    /* VERY IMPORTNT TO MAKE SURE THAT OVERLAY SVG IS HIDDEN */
+    overflow: hidden;
+}
+
+.icons a div svg {
+    background-color: black;
+}
+
+.icons a:hover, .icons a:active{
+    scale: 1.3;
+}
+
+.icons a:hover div, .icons a:active div {
+    height: 0;
+}
+
+.telegram::after {
+    z-index: -1;
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+.instagram::after {
+    z-index: -1;
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+.facebook::after {
+    z-index: -1;
+    content: '';
+    background-color: white;
+    position: absolute;
+    bottom: 7%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+}
+
+@media screen and (max-width: 900px) {
+    .description {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .description p {
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+}

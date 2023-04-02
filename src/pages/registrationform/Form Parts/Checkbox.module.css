@@ -1,0 +1,69 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+li {
+    margin: 20px 0;
+    position: relative;
+}
+
+li:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+li:nth-child(4) p {
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+li input:nth-child(2) {
+    position: relative;
+}
+
+.styled-checkbox {
+    position: relative; /* take it out of document flow */
+    opacity: 0; /* hide it */
+    /* dont use visibility:hidden because that does not show shadow when checkbox is focussed */
+}
+
+.styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Box */
+.styled-checkbox + label::before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+/* tick mark */
+.styled-checkbox:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    background: white;
+    width: 16px;
+    height: 12px;
+    -webkit-clip-path: polygon(12.5% 33.33%, 0% 50%, 37.5% 100%, 100% 16.66%, 87.5% 0%, 37.5% 66.66%);
+            clip-path: polygon(12.5% 33.33%, 0% 50%, 37.5% 100%, 100% 16.66%, 87.5% 0%, 37.5% 66.66%);
+}
+
+/* Box checked */
+.styled-checkbox:checked + label::before {
+  background: var(--theme);
+}

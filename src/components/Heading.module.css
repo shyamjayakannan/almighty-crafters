@@ -1,0 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.container {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.left-triangle {
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 80%;
+    background-color: var(--theme);
+    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+            clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.right-triangle {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 80%;
+    background-color: var(--theme);
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+            clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.left {
+    margin: 10px 0;
+    color: var(--theme);
+    font-size: 9vw;
+    margin-right: 40%;
+    text-align: center;
+}
+
+.right {
+    margin: 10px 0;
+    text-align: center;
+    margin-left: 40%;
+    color: var(--theme);
+    font-size: 9vw;
+}
+
+.center {
+    color: var(--theme);
+    font-size: 6rem;
+}
+
+.container span {
+    color: black;
+    background-color: var(--theme);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent;
+}

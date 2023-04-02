@@ -1,0 +1,315 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.encloser {
+    width: 100%;
+    height: 100%;
+}
+
+.h1 {
+    margin-left: 10vw;
+    font-size: 8vw;
+    color: var(--theme);
+    background-color: black;
+}
+
+.main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    height: 100%;
+    width: 70%;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.card {
+    margin: 5px 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.navigation-container {
+    z-index: -1;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.steps {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.current-step {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: white;
+    background-color: var(--theme);
+}
+
+.navigate {
+    margin: 20px 0;
+}
+
+.navigate-link {
+    color: white;
+    background-color: var(--theme);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.navigate-link:hover {
+    scale: 1.1;
+}
+
+.disabled-link {
+    text-decoration: none;
+    color: black;
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 20px 10px;
+    border: none;
+    pointer-events: none;
+}
+
+/* section visibility management */
+.invisible {
+    display: none;
+}
+
+.disabled {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.backdrop {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(220, 217, 217);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.loader {
+    width: 60%;
+    height: 60%;
+}
+
+.backdrop-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: white;
+    -webkit-box-shadow: 20px 20px 60px #9d9d9d,
+        -20px -20px 60px #ffffff;
+            box-shadow: 20px 20px 60px #9d9d9d,
+        -20px -20px 60px #ffffff;
+    -webkit-animation: enter 0.25s forwards;
+            animation: enter 0.25s forwards;
+}
+
+.backdrop-inner img {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 30px;
+    scale: 0;
+    -webkit-animation: enter 0.25s 0.25s forwards;
+            animation: enter 0.25s 0.25s forwards;
+}
+
+.exit {
+    -webkit-animation: exit 0.2s;
+            animation: exit 0.2s;
+}
+
+.fade-in {
+    -webkit-animation: fade_in 0.5s forwards;
+            animation: fade_in 0.5s forwards;
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes enter {
+    0% {
+        scale: 0;
+    }
+    98% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes enter {
+    0% {
+        scale: 0;
+    }
+    98% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@-webkit-keyframes exit {
+    0% {
+        scale: 1;
+    }
+    10% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 0;
+    }
+}
+
+@keyframes exit {
+    0% {
+        scale: 1;
+    }
+    10% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .navigation-container {
+        position: relative;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 100%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .main-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    body {
+        padding-right: 0;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+}

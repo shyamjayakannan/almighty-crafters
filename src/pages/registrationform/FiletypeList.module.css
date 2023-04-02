@@ -1,0 +1,54 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.h2 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 30px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 5px 20px;
+    margin-left: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.unstyled {
+    list-style-type: none;
+}
+
+.unstyled a {
+    text-decoration: none;
+}
+
+.other {
+    position: absolute;
+    width: 80%;
+    bottom: -14px;
+    left: 85px;
+}
+
+.unstyled p {
+    color: red;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 630px) {
+    .other {
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+
+    .card {
+        padding-bottom: 40px;
+    }
+}

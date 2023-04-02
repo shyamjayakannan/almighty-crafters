@@ -1,0 +1,269 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.nav {
+    z-index: 1;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0 20px;
+    padding-right: 40px;
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.logo:hover {
+    scale: 1.2;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.ul {
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style: none;
+}
+
+.links {
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(248, 242, 242);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-animation: show 1s forwards;
+            animation: show 1s forwards;
+}
+
+@-webkit-keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.active {
+    color: var(--theme);
+}
+
+.links:hover {
+    color: var(--theme);
+}
+
+.label {
+    text-decoration: none;
+    color: white;
+    background-color: var(--theme);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 20px 0;
+    width: 127px;
+    text-align: center;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.label:hover {
+    scale: 1.2;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 30px;
+}
+
+.hamburger input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+    /* for apple */
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+
+    z-index: 1;
+
+    -webkit-transform-origin: 0px 0px;
+
+        -ms-transform-origin: 0px 0px;
+
+            transform-origin: 0px 0px;
+
+    -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+.hamburger input:checked~span {
+    -webkit-transform: rotate(45deg) translateY(1px);
+        -ms-transform: rotate(45deg) translateY(1px);
+            transform: rotate(45deg) translateY(1px);
+    background-color: var(--theme);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+.hamburger input:checked~span:nth-child(3) {
+    opacity: 0;
+    -webkit-transform: scale(0.2, 0.2);
+        -ms-transform: scale(0.2, 0.2);
+            transform: scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+.hamburger input:checked~span:nth-child(4) {
+    -webkit-transform: rotate(-45deg) translate(-6px, 2px);
+        -ms-transform: rotate(-45deg) translate(-6px, 2px);
+            transform: rotate(-45deg) translate(-6px, 2px);
+}
+
+@media screen and (max-width: 1005px) {
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        background-color: black;
+        padding: 10vw 30px;
+        height: 100vh;
+        -webkit-transform: translate(100%);
+            -ms-transform: translate(100%);
+                transform: translate(100%);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    .translate {
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ul {
+        width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .links {
+        margin: 0 20px;
+    }
+}

@@ -1,0 +1,78 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.card {
+    margin: 5px 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card label span {
+    font-size: 12px;
+    color: var(--theme);
+}
+
+.cardinput {
+    font-size: 16px;
+    background: none;
+    /* VERY IMPORTANT REMOVE OUTLINE */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50vw;
+}
+
+.incorrect {
+    font-size: 16px;
+    background: none;
+    /* VERY IMPORTANT REMOVE OUTLINE */
+    outline: none;
+    border: none;
+    border-bottom: 2px solid red;
+    width: 50vw;
+}
+
+.card p {
+    color: red;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.line {
+    background-color: var(--theme);
+    width: 50vw;
+    height: 2px;
+    position: relative;
+    top: -2px;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.card input:focus {
+    border-color: transparent;
+}
+
+.card input:focus~.line {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+}
+
+@media screen and (min-width: 950px) {
+    .incorrect, .cardinput, .line {
+        width: 300px;
+    }
+}
