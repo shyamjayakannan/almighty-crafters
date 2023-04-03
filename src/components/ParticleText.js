@@ -131,7 +131,7 @@ function ParticleText(props) {
     useEffect(() => {
         const canvas = canvasRef.current;
 
-        contextRef.current = canvas.getContext('2d');
+        contextRef.current = canvas.getContext('2d', { willReadFrequently: true });
 
         let animationFrameId;
 

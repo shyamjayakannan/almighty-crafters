@@ -21,18 +21,8 @@ function MainPage() {
         observer = useRef(),
         elements = useRef();
 
-    useEffect(() => {
-        window.addEventListener('beforeunload', scroll);
+    useEffect(() => setTimeout(() => window.scrollTo(0, 0), 100), []);
 
-        function scroll() {
-            window.scrollTo(0, 0);
-        };
-
-        window.scrollTo(0, 0);
-
-        return () => window.removeEventListener('beforeunload', scroll);
-    }, []);
-    
     const intersect = useCallback(entries => {
         if (entries.length > 1) return;
 
