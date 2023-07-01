@@ -21,7 +21,9 @@ function MainPage() {
         observer = useRef(),
         elements = useRef();
 
-    useEffect(() => setTimeout(() => window.scrollTo(0, 0), 100), []);
+    useEffect(() => {
+        setTimeout(() => window.scrollTo(0, 0), 100);
+    }, []);
 
     const intersect = useCallback(entries => {
         if (entries.length > 1) return;

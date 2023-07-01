@@ -2,14 +2,14 @@ import { useEffect, useRef } from "react";
 import styles from "./sine.module.css";
 
 let increment = 0, frequency = 1, friction = 0.02;
-const height = window.innerWidth / window.innerHeight > 1.3 ? 700 : 1000;
+const height = window.innerHeight / 2;
 
 function draw(c, canvas) {
     c.beginPath();
     c.fillStyle = document.documentElement.style.getPropertyValue('--theme');
 
     for (let i = 0; i < canvas.width; i++) {
-        c.fillRect(i, 0, 1, height - Math.sin(i * 0.004 - increment) * 25);
+        c.fillRect(i, height - Math.sin(i * 0.004 - increment) * 25, 1, window.innerHeight);
     }
 
     c.closePath();

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import BorderAnimation from "../../../components/BorderAnimation";
 import Delay from "../../../components/Delay";
 import Heading from "../../../components/Heading";
@@ -24,11 +23,11 @@ function Services() {
                             Just click on the button below.
                         </p>
 
-                        <Link className={styles["link-container"]} to="/registration" target="_blank" rel="noreferrer">
+                        <a className={styles["link-container"]} href="https://docs.google.com/forms/d/e/1FAIpQLSfdVAT0Tr7w-yDbKcZRejZN5cVg_JcWDCPKM4YwTcw5kGkisg/viewform" target="_blank" rel="noreferrer">
                             <div className={styles.s1}></div>
                             <div className={styles.s2}></div>
                             <span>Register Now</span>
-                        </Link>
+                        </a>
 
                         <p align="justify">
                             WE ALSO CRAFT NFTs FOR YOU. So if you want to turn your family photograph into digital art or want NFTs of your product,
