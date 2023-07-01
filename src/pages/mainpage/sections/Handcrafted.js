@@ -10,28 +10,28 @@ function Handcrafted() {
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thechimprealm" rel="noreferrer">
-                                <img alt="" src="/pictures/cigarchimp.jpg" />
+                                <img alt="" src="./pictures/cigarchimp.jpg" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thecrookedcactus" rel="noreferrer">
-                                <img alt="" src="/slider/3.jpg" />
+                                <img alt="" src="./slider/3.jpg" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thefeminasupremacy" rel="noreferrer">
-                                <img alt="" src="/pictures/aestheticariana.jpg" />
+                                <img alt="" src="./pictures/aestheticariana.jpg" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thelordlylionsclub" rel="noreferrer">
-                                <img alt="" src="pictures\hcol_lion.jpg" />
+                                <img alt="" src="./pictures/hcol_lion.jpg" />
                             </a>
                         </div>
                     </div>
@@ -40,28 +40,28 @@ function Handcrafted() {
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thehearteninghippos" rel="noreferrer">
-                                <img alt="" src="/pictures/BABY Hippo tududududu.jpg" />
+                                <img alt="" src="./pictures/BABY Hippo tududududu.jpg" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/theblackfederation" rel="noreferrer">
-                                <img alt="" src="/slider/5.jpg" />
+                                <img alt="" src="./slider/5.jpg" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thechimprealm" rel="noreferrer">
-                                <img alt="" src="/pictures/chulbul chimp.jpg" />
+                                <img alt="" src="./pictures/chulbul chimp.jpg" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/theclassicchameleons" rel="noreferrer">
-                                <img alt="" src="/pictures/ferocious.jpg" />
+                                <img alt="" src="./pictures/ferocious.jpg" />
                             </a>
                         </div>
                     </div>

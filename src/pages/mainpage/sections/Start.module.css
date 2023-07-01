@@ -27,7 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8em;
+
+    /* min 50px at width 400px and max 120px at width 900px.
+    slope = (120 - 50)/(900 - 400) = 7 / 50
+    so straight line -> 50px - (7/50)(100vw - 400px) */
+    font-size: clamp(50px, calc(-6px + 14vw), 120px);
     color: white;
     font-family: 'Eczar', serif;
     font-weight: bold;

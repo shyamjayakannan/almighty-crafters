@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./ImageSlider.module.css";
 import Card from "../../../components/Card";
 
-const images = ["/slider/0.png", "/slider/1.jpg", "/slider/2.png", "/slider/3.jpg", "/slider/4.png", "/slider/5.jpg", "/slider/6.jpeg", "/slider/7.jpg", "/slider/8.png", "/slider/9.jpg"],
+const images = ["./slider/0.png", "./slider/1.jpg", "./slider/2.png", "./slider/3.jpg", "./slider/4.png", "./slider/5.jpg", "./slider/6.jpeg", "./slider/7.jpg", "./slider/8.png", "./slider/9.jpg"],
     links = [
         "https://opensea.io/collection/theetherealangels",
         "https://opensea.io/collection/thechimprealm",

@@ -29,7 +29,7 @@
 }
 
 .card button div {
-    background-image: url('/public/upload-3-16.png');
+    background-image: url('./public/upload-3-16.png');
     background-size: 100%;
     width: 15px;
     height: 15px;
@@ -43,5 +43,5 @@
 }
 
 .card .folder-button div {
-    background-image: url('/public/folder-7-24.ico');
+    background-image: url('./public/folder-7-24.ico');
 }

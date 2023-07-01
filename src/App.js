@@ -1,4 +1,3 @@
-import { Navigate, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/mainpage/MainPage";
 
 const colors = [
@@ -15,11 +14,12 @@ document.documentElement.style.setProperty('--subtheme', colors[index].subtheme)
 
 function App() {
     return (
-        <Routes>
-            {/* <Route path="/registration" element={<Form />} /> */}
-            <Route path="/home" element={<MainPage />} />
-            <Route path="*" element={<Navigate to="/home" />} />
-        </Routes>
+        // <Routes>
+        //     {/* <Route path="/registration" element={<Form />} /> */}
+        //     <Route path="/home" element={<MainPage />} />
+        //     <Route path="*" element={<Navigate to="/home" />} />
+        // </Routes>
+        <MainPage />
     );
 };
 

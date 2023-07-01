@@ -60,7 +60,7 @@ function Navbar(props) {
 
     return (
         <nav className={styles.nav}>
-            <a className={styles.logo} href="#home"><img src="pictures\AC Icon (1).png" alt="" /></a>
+            <a className={styles.logo} href="#home"><img src="./pictures/AC Icon (1).png" alt="" /></a>
             <ul className={`${styles.ul} ${hamburgerChecked ? styles.translate : undefined}`}>
                 <li><button onClick={() => props.navigate(1)} className={`${styles.links} ${scroll.home ? styles.active : ''}`}>Home</button></li>
                 <li><button onClick={() => props.navigate(2)} className={`${styles.links} ${scroll.about ? styles.active : ''}`}>About Us</button></li>

@@ -10,28 +10,28 @@ function AIcollection() {
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/theenchantedcastles" rel="noreferrer">
-                                <img alt="" src="pictures\castles.png" />
+                                <img alt="" src="pictures/castles.png" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thebonapes" rel="noreferrer">
-                                <img alt="" src="/pictures/bonapetite_17.jpeg" />
+                                <img alt="" src="./pictures/bonapetite_17.jpeg" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thelighteningdaemon" rel="noreferrer">
-                                <img alt="" src="/slider/4.png" />
+                                <img alt="" src="./slider/4.png" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/theskyscrapingestablishments" rel="noreferrer">
-                                <img alt="" src="/pictures/Copy of science fiction(026)_0003 2587083096.png" />
+                                <img alt="" src="./pictures/Copy of science fiction(026)_0003 2587083096.png" />
                             </a>
                         </div>
                     </div>
@@ -40,28 +40,28 @@ function AIcollection() {
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thejokerjeopardy" rel="noreferrer">
-                                <img alt="" src="/pictures/The Joker(009)_0019 282686930.png" />
+                                <img alt="" src="./pictures/The Joker(009)_0019 282686930.png" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/theetherealangels" rel="noreferrer">
-                                <img alt="" src="/pictures/Nyx goddess of(003)_0007 1065911151.png" />
+                                <img alt="" src="./pictures/Nyx goddess of(003)_0007 1065911151.png" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/theskeletalmanga" rel="noreferrer">
-                                <img alt="" src="/pictures/anime manga(015)_0011 537515347.png" />
+                                <img alt="" src="./pictures/anime manga(015)_0011 537515347.png" />
                             </a>
                         </div>
                     </div>
                     <div className={styles.imageboundary}>
                         <div>
                             <a target="_blank" href="https://opensea.io/collection/thevicioussorceress" rel="noreferrer">
-                                <img alt="" src="pictures\sorceress goddess(013)_0007 3456871387_out.png" />
+                                <img alt="" src="./pictures/sorceress goddess(013)_0007 3456871387_out.png" />
                             </a>
                         </div>
                     </div>

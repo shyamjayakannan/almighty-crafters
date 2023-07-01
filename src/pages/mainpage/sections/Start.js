@@ -5,7 +5,7 @@ function Start(props) {
     return (
         <section className={`${styles.section} ${props.className ? props.className : ''}`}>
             <div id="text" className={styles.text}>
-                ALMIGHTY CRAFTERS
+                ALMIGHTY<br />CRAFTERS
             </div>
             <Sine height={window.innerHeight} width={window.innerWidth} />
         </section>
