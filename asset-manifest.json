@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/almighty-crafters/static/css/main.982411dd.css",
+    "main.js": "/almighty-crafters/static/js/main.95660bbe.js",
+    "index.html": "/almighty-crafters/index.html",
+    "main.982411dd.css.map": "/almighty-crafters/static/css/main.982411dd.css.map",
+    "main.95660bbe.js.map": "/almighty-crafters/static/js/main.95660bbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.982411dd.css",
+    "static/js/main.95660bbe.js"
+  ]
+}
