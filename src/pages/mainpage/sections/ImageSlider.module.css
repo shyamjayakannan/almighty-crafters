@@ -68,6 +68,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     border: none;
+    cursor: pointer;
 }
 
 .move button>div {
@@ -258,22 +259,8 @@ SO WE SPECIFY WIDTH AND HEIGHT IN ALL THE BOXES INSTEAD OF OVVERIDING*/
         display: flex;
     }
 
-    .move button:nth-child(2) {
-        margin: 0;
-        margin-left: 50px;
-        margin-bottom: 50px;
-    }
-
-    .move button>div {
-        -webkit-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
-                transform: rotate(-90deg);
-        -webkit-transform-origin: 50% 95%;
-            -ms-transform-origin: 50% 95%;
-                transform-origin: 50% 95%;
-        position: relative;
-        bottom: 6px;
-        left: 8px;
+    .move button {
+        display: none;
     }
     
     .move button:nth-child(2)>div {
