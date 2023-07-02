@@ -294,8 +294,9 @@ SO WE SPECIFY WIDTH AND HEIGHT IN ALL THE BOXES INSTEAD OF OVVERIDING*/
     }
 
     .box2 {
-        -webkit-transform: translateX(0) perspective(150px) rotateY(0deg);
-                transform: translateX(0) perspective(150px) rotateY(0deg);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+                scale: 2;
     }
 
     .box3 {
