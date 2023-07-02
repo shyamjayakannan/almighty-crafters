@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/almighty-crafters/static/css/main.c5ed0436.css",
+    "main.css": "/almighty-crafters/static/css/main.0958b868.css",
     "main.js": "/almighty-crafters/static/js/main.68e66fb8.js",
     "index.html": "/almighty-crafters/index.html",
-    "main.c5ed0436.css.map": "/almighty-crafters/static/css/main.c5ed0436.css.map",
+    "main.0958b868.css.map": "/almighty-crafters/static/css/main.0958b868.css.map",
     "main.68e66fb8.js.map": "/almighty-crafters/static/js/main.68e66fb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5ed0436.css",
+    "static/css/main.0958b868.css",
     "static/js/main.68e66fb8.js"
   ]
 }
